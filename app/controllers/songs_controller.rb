@@ -23,6 +23,14 @@ class SongsController < ApplicationController
     	  redirect_to song_path(@song)
     	end
 
+#      def create
+#    	  @song = Song.new(song_params)
+#    	  @song.save
+#    	  redirect_to song_path(@song)
+#    	end
+
+
+
     	def update
     	  @song = Song.find(params[:id])
     	  @song.update(song_params(:name))
